@@ -1,0 +1,21 @@
+# Секреты и локальная настройка
+.env
+backend/.env
+*.env.local
+
+# Зависимости
+node_modules/
+backend/node_modules/
+
+# Системные и редакторы
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+*.swp
+*~
+
+# Временные и бэкапы (если появятся)
+*.bak
+*.backup

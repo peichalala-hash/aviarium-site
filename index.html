@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AVIARIUM — Коллекция редких оттенков природы</title>
+  <meta name="description" content="Подарочные коллекции редких куриных яиц. Эксклюзивно для ценителей эстетики и вкуса.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти к основному содержимому</a>
+  <header class="header">
+    <div class="header-inner">
+      <a href="#" class="logo">AVIARIUM</a>
+      <p class="tagline">Коллекция редких оттенков природы</p>
+      <button type="button" class="burger" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#about">О нас</a>
+        <a href="#aviary">Авиариум</a>
+        <a href="#collections">Коллекции</a>
+        <a href="#refill">Докупка яиц</a>
+        <a href="#calculator">Калькулятор</a>
+        <a href="#pysanky">Писанки и шкатулки</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <button type="button" class="header-cart" id="header-cart" aria-label="Корзина" data-count="0">
+        <span class="header-cart-icon" aria-hidden="true">🛒</span>
+        <span class="header-cart-count" id="header-cart-count">0</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <div class="hero-gradient"></div>
+        <div class="hero-pattern" aria-hidden="true"></div>
+        <div class="hero-shine" aria-hidden="true"></div>
+      </div>
+      <div class="hero-content">
+        <h1 class="hero-title">Искусство, созданное природой.</h1>
+        <p class="hero-subtitle">Подарочные коллекции редких куриных яиц. Эксклюзивно для ценителей эстетики и вкуса.</p>
+        <p class="hero-price">от 19 900 ₽</p>
+        <a href="#collections" class="btn btn-primary">Коллекции</a>
+      </div>
+      <a href="#about" class="hero-scroll">
+        <span>Листайте вниз</span>
+        <div class="scroll-line"></div>
+      </a>
+    </section>
+
+    <section class="section section-about" id="about">
+      <div class="container">
+        <h2 class="section-title">Редкость, достойная восхищения.</h2>
+        <div class="about-text">
+          <p>AVIARIUM — это частный питомник, где птицеводство соприкасается с высоким искусством. Мы ушли от промышленных стандартов, чтобы вернуть яйцу его сакральную ценность.</p>
+          <p>Каждое яйцо в нашей коллекции — результат кропотливой работы орнитологов и уникального генофонда редких пород кур: от изысканной Арауканы, несущей бирюзовые яйца, до бархатной Кремлёвской леггорн.</p>
+          <p>Мы не продаём продукты питания. Мы дарим эмоции, упакованные в натуральную скорлупу. Наши яйца никогда не увидят полок супермаркетов. Они созданы вручную для самых взысканных коллекционеров красивой жизни.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-aviary" id="aviary">
+      <div class="container">
+        <h2 class="section-title">Наш авиариум</h2>
+        <p class="section-lead">Породы кур, яйца которых поставляются в наших наборах</p>
+        <div class="aviary-hero">
+          <div class="aviary-hero-visual">
+            <img src="images/aviary-building.jpg" alt="Премиум-авиариум AVIARIUM — павильон из камня и меди, сегментированный выгул" loading="lazy">
+            <div class="aviary-hero-overlay">
+              <p class="aviary-hero-caption">Редкие породы в окружении, достойном их ценности. Каждое яйцо — из этого дома.</p>
+            </div>
+          </div>
+        </div>
+        <div class="aviary-grid">
+          <article class="aviary-card">
+            <a href="breed-araukana.html" class="aviary-visual-link">
+              <div class="aviary-visual">
+                <img src="images/breeds/araukana.jpg" alt="Араукана в вольере авиариума" loading="lazy">
+              </div>
+            </a>
+            <div class="aviary-body">
+              <div class="aviary-body-text">
+                <h3 class="aviary-title"><a href="breed-araukana.html">Араукана</a></h3>
+                <p class="aviary-desc">Яйца голубого и бирюзового оттенка благодаря пигменту биливердину. Порода родом из Чили, в Европу попала в XX веке.</p>
+              </div>
+              <a href="#calculator" class="aviary-egg-link" data-breed="araukana" title="Цвет яйца — перейти в калькулятор"><span class="aviary-egg calc-breed-egg calc-breed-egg-araukana"></span></a>
+            </div>
+          </article>
+          <article class="aviary-card">
+            <a href="breed-uheilyuy.html" class="aviary-visual-link">
+              <div class="aviary-visual">
+                <img src="images/breeds/uheilyuy.jpg" alt="Ухейилюй в вольере авиариума" loading="lazy">
+              </div>
+            </a>
+            <div class="aviary-body">
+              <div class="aviary-body-text">
+                <h3 class="aviary-title"><a href="breed-uheilyuy.html">Ухейилюй</a></h3>
+                <p class="aviary-desc">Китайская порода с оливковыми и бирюзовыми яйцами. Редкая, разводится энтузиастами и частными питомниками.</p>
+              </div>
+              <a href="#calculator" class="aviary-egg-link" data-breed="uheilyuy" title="Цвет яйца — перейти в калькулятор"><span class="aviary-egg calc-breed-egg calc-breed-egg-uheilyuy"></span></a>
+            </div>
+          </article>
+          <article class="aviary-card">
+            <a href="breed-maran.html" class="aviary-visual-link">
+              <div class="aviary-visual">
+                <img src="images/breeds/maran-copper.jpg" alt="Маран медный в вольере авиариума" loading="lazy">
+              </div>
+            </a>
+            <div class="aviary-body">
+              <div class="aviary-body-text">
+                <h3 class="aviary-title"><a href="breed-maran.html">Маран медный</a></h3>
+                <p class="aviary-desc">Французская порода. Яйца тёплого медного оттенка — насыщенный коричневый с рыжиной. Отличный вкус.</p>
+              </div>
+              <a href="#calculator" class="aviary-egg-link" data-breed="maran" title="Цвет яйца — перейти в калькулятор"><span class="aviary-egg calc-breed-egg calc-breed-egg-maran"></span></a>
+            </div>
+          </article>
+          <article class="aviary-card">
+            <a href="breed-olivegger.html" class="aviary-visual-link">
+              <div class="aviary-visual">
+                <img src="images/breeds/olivegger.jpg" alt="Олив Эггер в вольере авиариума" loading="lazy">
+              </div>
+            </a>
+            <div class="aviary-body">
+              <div class="aviary-body-text">
+                <h3 class="aviary-title"><a href="breed-olivegger.html">Олив Эггер</a></h3>
+                <p class="aviary-desc">Гибридная линия (голубой + тёмный пигмент). Яйца оливкового, серо-зелёного и перламутрового оттенков.</p>
+              </div>
+              <a href="#calculator" class="aviary-egg-link" data-breed="olivegger" title="Цвет яйца — перейти в калькулятор"><span class="aviary-egg calc-breed-egg calc-breed-egg-olivegger"></span></a>
+            </div>
+          </article>
+          <article class="aviary-card">
+            <a href="breed-legorn.html" class="aviary-visual-link">
+              <div class="aviary-visual">
+                <img src="images/breeds/legorn.jpg" alt="Кремлёвская леггорн в вольере авиариума" loading="lazy">
+              </div>
+            </a>
+            <div class="aviary-body">
+              <div class="aviary-body-text">
+                <h3 class="aviary-title"><a href="breed-legorn.html">Кремлёвская леггорн</a></h3>
+                <p class="aviary-desc">Белые и кремовые яйца высшей категории. Классическая чистота формы и оттенка для торжественной подачи.</p>
+              </div>
+              <a href="#calculator" class="aviary-egg-link" data-breed="legorn" title="Цвет яйца — перейти в калькулятор"><span class="aviary-egg calc-breed-egg calc-breed-egg-legorn"></span></a>
+            </div>
+          </article>
+          <article class="aviary-card">
+            <a href="breed-orpington.html" class="aviary-visual-link">
+              <div class="aviary-visual">
+                <img src="images/breeds/orpington.jpg" alt="Орпингтон в вольере авиариума" loading="lazy">
+              </div>
+            </a>
+            <div class="aviary-body">
+              <div class="aviary-body-text">
+                <h3 class="aviary-title"><a href="breed-orpington.html">Орпингтон</a></h3>
+                <p class="aviary-desc">Английская мясо-яичная порода. Яйца кремовые и персиковые — тёплая «закатная» палитра для наборов.</p>
+              </div>
+              <a href="#calculator" class="aviary-egg-link" data-breed="orpington" title="Цвет яйца — перейти в калькулятор"><span class="aviary-egg calc-breed-egg calc-breed-egg-orpington"></span></a>
+            </div>
+          </article>
+          <article class="aviary-card">
+            <a href="breed-maran-dark.html" class="aviary-visual-link">
+              <div class="aviary-visual">
+                <img src="images/breeds/maran-black-copper.jpg" alt="Маран чёрно-медный в вольере авиариума" loading="lazy">
+              </div>
+            </a>
+            <div class="aviary-body">
+              <div class="aviary-body-text">
+                <h3 class="aviary-title"><a href="breed-maran-dark.html">Маран чёрно-медный</a></h3>
+                <p class="aviary-desc">Разновидность марана с самыми тёмными яйцами: от тёмно-коричневого до «пасхального» шоколада, как при окрашивании луковой шелухой. Оперение чёрное с менее выраженным медным воротником, чёрные перья ближе к лапам. Ценится гурманами.</p>
+              </div>
+              <a href="#calculator" class="aviary-egg-link" data-breed="maran-dark" title="Цвет яйца — перейти в калькулятор"><span class="aviary-egg calc-breed-egg calc-breed-egg-maran-dark"></span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-process" id="process">
+      <div class="container">
+        <h2 class="section-title">От гнезда до вас</h2>
+        <p class="section-lead">Как мы собираем, храним, проверяем и готовим яйца к отправке. Всё надёжно, стерильно и по-настоящему природное.</p>
+        <div class="process-grid">
+          <article class="process-step">
+            <span class="process-step-num" aria-hidden="true">1</span>
+            <h3 class="process-step-title">Сбор и учёт</h3>
+            <p class="process-step-desc">Яйца забираем из гнёзд несколько раз в день. Сразу фиксируем дату снесения и породу — так мы всегда знаем происхождение каждого яйца и срок его свежести.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-step-num" aria-hidden="true">2</span>
+            <h3 class="process-step-title">Хранение</h3>
+            <p class="process-step-desc">До проверки и упаковки яйца хранятся в затемнённом помещении при стабильной температуре и влажности. Срок хранения до отгрузки — минимальный, в пределах норм для диетического яйца.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-step-num" aria-hidden="true">3</span>
+            <h3 class="process-step-title">Мойка (при необходимости)</h3>
+            <p class="process-step-desc">Если на скорлупе есть следы (подстилка, пыль), яйца аккуратно моют в проточной воде без агрессивной химии. Используем только разрешённые средства; после — ополаскивание и просушивание. Чистые яйца не моем — природный защитный слой скорлупы сохраняем.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-step-num" aria-hidden="true">4</span>
+            <h3 class="process-step-title">Просвечивание (овоскопирование)</h3>
+            <p class="process-step-desc">Каждое яйцо просвечиваем на овоскопе: проверяем целостность скорлупы, отсутствие микротрещин, состояние воздушной камеры и содержимого. В набор попадают только безупречные экземпляры.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-step-num" aria-hidden="true">5</span>
+            <h3 class="process-step-title">Взвешивание и калибровка</h3>
+            <p class="process-step-desc">Яйца взвешиваем и при необходимости калибруем под выбранную упаковку: подбираем размер и количество так, чтобы они аккуратно легли в ячейки ларца или кейса. Это гарантирует и презентабельный вид, и сохранность при перевозке.</p>
+          </article>
+          <article class="process-step">
+            <span class="process-step-num" aria-hidden="true">6</span>
+            <h3 class="process-step-title">Упаковка и отправка</h3>
+            <p class="process-step-desc">Перед упаковкой повторно проверяем чистоту и целостность. Яйца укладываются в авторскую упаковку с мягкими гнёздами, при необходимости — с термозащитой и маркировкой «хрупкое». К вам уходит только то, что прошло все этапы контроля.</p>
+          </article>
+        </div>
+        <p class="process-footer">Мы не используем консерванты и не обрабатываем скорлупу веществами, меняющими её естественный вид. Продукция имеет ветеринарные документы; при доставке соблюдаем температурный режим и сроки годности.</p>
+      </div>
+    </section>
+
+    <section class="section section-packaging" id="collections">
+      <div class="container">
+        <h2 class="section-title">Коллекции</h2>
+        <p class="section-lead">Яйца продаются наборами в авторской упаковке. Каждая коллекция поставляется в уникальной упаковке ручной работы.</p>
+        <div class="packaging-grid">
+          <article class="pack-card" data-cart-name="Ларец «Рассвет Империи»" data-cart-price="24900">
+            <a href="collection-rassvet-imperii.html" class="pack-visual pack-visual-img pack-visual-link">
+              <img src="images/pack-casket.jpg" alt="Ларец из карельской берёзы с яйцами коллекции Рассвет Империи" loading="lazy">
+            </a>
+            <div class="pack-body">
+              <h3 class="pack-title"><a href="collection-rassvet-imperii.html">Ларец «Рассвет Империи»</a></h3>
+              <p class="pack-desc">Ларец ручной работы из карельской берёзы, отделанный натуральной замшей внутри. В комплекте позолоченная подставка для яиц.</p>
+              <p class="pack-collection">Коллекция «Рассвет Империи» · 24 900 ₽</p>
+              <button type="button" class="btn btn-card add-to-cart-btn">В корзину</button>
+            </div>
+          </article>
+          <article class="pack-card" data-cart-name="Кейс «Лазурит»" data-cart-price="34500">
+            <a href="collection-lazurit.html" class="pack-visual pack-visual-img pack-visual-link">
+              <img src="images/pack-glass.jpg" alt="Кейс из стекла на мраморной подставке, коллекция Лазурит" loading="lazy">
+            </a>
+            <div class="pack-body">
+              <h3 class="pack-title"><a href="collection-lazurit.html">Кейс «Лазурит»</a></h3>
+              <p class="pack-desc">Кейс из закалённого стекла на подставке из чёрного мрамора. Имитирует музейную витрину.</p>
+              <p class="pack-collection">Коллекция «Лазурит» · 34 500 ₽</p>
+              <button type="button" class="btn btn-card add-to-cart-btn">В корзину</button>
+            </div>
+          </article>
+          <article class="pack-card pack-card-featured" data-cart-name="Сундучок «Перламутр и Золото»" data-cart-price="59000">
+            <a href="collection-perlamutr-zoloto.html" class="pack-visual pack-visual-img pack-visual-link">
+              <img src="images/pack-leather.jpg" alt="Сундучок из кожи с гнёздами для яиц, коллекция Перламутр и Золото" loading="lazy">
+            </a>
+            <div class="pack-body">
+              <h3 class="pack-title"><a href="collection-perlamutr-zoloto.html">Сундучок «Перламутр и Золото»</a></h3>
+              <p class="pack-desc">Сундучок, обтянутый кожей, с индивидуальными гнёздами для каждого яйца и серебряным прибором для чистки.</p>
+              <p class="pack-collection">Коллекция «Перламутр и Золото» · 59 000 ₽</p>
+              <button type="button" class="btn btn-card add-to-cart-btn">В корзину</button>
+            </div>
+          </article>
+          <article class="pack-card" data-cart-name="Шкатулка «Лунный сад»" data-cart-price="19900">
+            <a href="collection-lunny-sad.html" class="pack-visual pack-visual-img pack-visual-link">
+              <img src="images/pack-lunar.jpg" alt="Шкатулка Лунный сад — матовое стекло, серебряный ободок" loading="lazy">
+            </a>
+            <div class="pack-body">
+              <h3 class="pack-title"><a href="collection-lunny-sad.html">Шкатулка «Лунный сад»</a></h3>
+              <p class="pack-desc">Круглая шкатулка из матового стекла с серебряным ободком. Минималистичная подача для 4 яиц пастельной гаммы.</p>
+              <p class="pack-collection">Коллекция «Лунный сад» · 19 900 ₽</p>
+              <button type="button" class="btn btn-card add-to-cart-btn">В корзину</button>
+            </div>
+          </article>
+          <article class="pack-card" data-cart-name="Короб «Осенний лес»" data-cart-price="27500">
+            <a href="collection-osenniy-les.html" class="pack-visual pack-visual-img pack-visual-link">
+              <img src="images/pack-autumn.jpg" alt="Короб Осенний лес — дуб с выжиганием, бархат" loading="lazy">
+            </a>
+            <div class="pack-body">
+              <h3 class="pack-title"><a href="collection-osenniy-les.html">Короб «Осенний лес»</a></h3>
+              <p class="pack-desc">Короб из тёмного дуба с ручной выжиганием, внутри бархат тёмно-зелёный. 8 яиц.</p>
+              <p class="pack-collection">Коллекция «Осенний лес» · 27 500 ₽</p>
+              <button type="button" class="btn btn-card add-to-cart-btn">В корзину</button>
+            </div>
+          </article>
+          <article class="pack-card" data-cart-name="Ларец «Нефертити»" data-cart-price="31000">
+            <a href="collection-nefertiti.html" class="pack-visual pack-visual-img pack-visual-link">
+              <img src="images/pack-nefertiti.jpg" alt="Ларец Нефертити — керамика ар-деко, бирюза и золото" loading="lazy">
+            </a>
+            <div class="pack-body">
+              <h3 class="pack-title"><a href="collection-nefertiti.html">Ларец «Нефертити»</a></h3>
+              <p class="pack-desc">Керамический ларец в духе ар-деко: бирюзовая глазурь и золотой орнамент. 6 яиц.</p>
+              <p class="pack-collection">Коллекция «Нефертити» · 31 000 ₽</p>
+              <button type="button" class="btn btn-card add-to-cart-btn">В корзину</button>
+            </div>
+          </article>
+          <article class="pack-card" data-cart-name="Шкатулка «Северное сияние»" data-cart-price="36000">
+            <a href="collection-severnoe-siyanie.html" class="pack-visual pack-visual-img pack-visual-link">
+              <img src="images/pack-northern.jpg" alt="Шкатулка Северное сияние — чёрное дерево, перламутр" loading="lazy">
+            </a>
+            <div class="pack-body">
+              <h3 class="pack-title"><a href="collection-severnoe-siyanie.html">Шкатулка «Северное сияние»</a></h3>
+              <p class="pack-desc">Длинная шкатулка из чёрного дерева с инкрустацией перламутром. 6 яиц холодной гаммы.</p>
+              <p class="pack-collection">Коллекция «Северное сияние» · 36 000 ₽</p>
+              <button type="button" class="btn btn-card add-to-cart-btn">В корзину</button>
+            </div>
+          </article>
+          <article class="pack-card" data-cart-name="Короб «Павлин»" data-cart-price="39900">
+            <a href="collection-pavlin.html" class="pack-visual pack-visual-img pack-visual-link">
+              <img src="images/pack-peacock.jpg" alt="Короб Павлин — ткань павлиний глаз, атлас" loading="lazy">
+            </a>
+            <div class="pack-body">
+              <h3 class="pack-title"><a href="collection-pavlin.html">Короб «Павлин»</a></h3>
+              <p class="pack-desc">Круглая коробка, обтянутая тканью с узором «павлиний глаз», внутри атлас. 8 яиц.</p>
+              <p class="pack-collection">Коллекция «Павлин» · 39 900 ₽</p>
+              <button type="button" class="btn btn-card add-to-cart-btn">В корзину</button>
+            </div>
+          </article>
+          <article class="pack-card" data-cart-name="Короб «Кобальт и золото»" data-cart-price="45000">
+            <a href="collection-imperatorskiy-farfor.html" class="pack-visual pack-visual-img pack-visual-link">
+              <img src="images/pack-imperial.jpg" alt="Короб Кобальт и золото — белый фарфор, кобальт и золото" loading="lazy">
+            </a>
+            <div class="pack-body">
+              <h3 class="pack-title"><a href="collection-imperatorskiy-farfor.html">Короб «Кобальт и золото»</a></h3>
+              <p class="pack-desc">Белая фарфоровая коробка с кобальтовой росписью и золотым ободком. Подставка в комплекте. 6 яиц.</p>
+              <p class="pack-collection">Коллекция «Кобальт и золото» · 45 000 ₽</p>
+              <button type="button" class="btn btn-card add-to-cart-btn">В корзину</button>
+            </div>
+          </article>
+          <article class="pack-card" data-cart-name="Ларец «Ночной сад»" data-cart-price="52000">
+            <a href="collection-nochnoy-sad.html" class="pack-visual pack-visual-img pack-visual-link">
+              <img src="images/pack-nightgarden.jpg" alt="Ларец Ночной сад — орех, резьба, бордовый бархат" loading="lazy">
+            </a>
+            <div class="pack-body">
+              <h3 class="pack-title"><a href="collection-nochnoy-sad.html">Ларец «Ночной сад»</a></h3>
+              <p class="pack-desc">Глубокий ларец из тёмного ореха, крышка с резьбой «листва», внутри бордовый бархат. 10 яиц.</p>
+              <p class="pack-collection">Коллекция «Ночной сад» · 52 000 ₽</p>
+              <button type="button" class="btn btn-card add-to-cart-btn">В корзину</button>
+            </div>
+          </article>
+          <article class="pack-card" data-cart-name="Кейс «Алмаз»" data-cart-price="65000">
+            <a href="collection-almaz.html" class="pack-visual pack-visual-img pack-visual-link">
+              <img src="images/pack-diamond.jpg" alt="Кейс Алмаз — гранёный кристалл на зеркале" loading="lazy">
+            </a>
+            <div class="pack-body">
+              <h3 class="pack-title"><a href="collection-almaz.html">Кейс «Алмаз»</a></h3>
+              <p class="pack-desc">Кейс в форме гранёного кристалла из прозрачного акрила на зеркальной подставке. 6 яиц.</p>
+              <p class="pack-collection">Коллекция «Алмаз» · 65 000 ₽</p>
+              <button type="button" class="btn btn-card add-to-cart-btn">В корзину</button>
+            </div>
+          </article>
+          <article class="pack-card pack-card-featured" data-cart-name="Сундук «Османский»" data-cart-price="74900">
+            <a href="collection-velikolepnyy-vek.html" class="pack-visual pack-visual-img pack-visual-link">
+              <img src="images/pack-magnificent.jpg" alt="Сундук Османский — османский стиль, латунь, эмаль, красный шёлк" loading="lazy">
+            </a>
+            <div class="pack-body">
+              <h3 class="pack-title"><a href="collection-velikolepnyy-vek.html">Сундук «Османский»</a></h3>
+              <p class="pack-desc">Большой сундук в османском стиле: чеканная латунь, эмаль, внутри красный шёлк и индивидуальные гнёзда. 12 яиц, серебряная ложечка, сертификат.</p>
+              <p class="pack-collection">Коллекция «Османский» · 74 900 ₽</p>
+              <button type="button" class="btn btn-card add-to-cart-btn">В корзину</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-shell" id="shell">
+      <div class="container container-narrow">
+        <h2 class="section-title">Скорлупа как холст</h2>
+        <div class="shell-content">
+          <p class="shell-lead">Мы не красим яйца. Мы культивируем цвет.</p>
+          <p>Цвет скорлупы определяется генетикой и питанием наших птиц. В их рацион входят лепестки календулы, ягоды годжи и отборные зерна, что делает желток насыщенно-оранжевым, а вкус — сливочно-нежным.</p>
+          <p>Каждое яйцо проходит тщательный отбор. Мы отбраковываем любые несовершенства формы. Только безупречность имеет право быть упакованной в AVIARIUM.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-refill" id="refill">
+      <div class="container">
+        <h2 class="section-title">Когда яйца съедены</h2>
+        <p class="section-lead refill-lead">Подарок куплен ради яиц, но упаковка остаётся. Пустая шкатулка — не конец истории.</p>
+        <div class="refill-options">
+          <a href="#calculator" class="refill-option-card">
+            <div class="refill-option-visual refill-option-calc">
+              <img src="images/refill/refill-calculator.jpg" alt="Калькулятор яиц" loading="lazy">
+            </div>
+            <h4 class="refill-option-title">Калькулятор яиц</h4>
+            <p>Порода, цвет, количество — соберите набор под свою шкатулку и оформите заказ.</p>
+          </a>
+          <div class="refill-option-card refill-option-card-static">
+            <div class="refill-option-visual refill-option-jewelry">
+              <img src="images/refill/refill-jewelry.jpg" alt="Шкатулка для драгоценностей" loading="lazy">
+            </div>
+            <h4 class="refill-option-title">Шкатулка для драгоценностей</h4>
+            <p>Ларцы AVIARIUM подходят для хранения украшений и ценностей; опция умного замка и датчиков.</p>
+          </div>
+          <a href="#pysanky" class="refill-option-card">
+            <div class="refill-option-visual refill-option-pysanka">
+              <img src="images/refill/refill-pysanky.jpg" alt="Писанки в ларце" loading="lazy">
+            </div>
+            <h4 class="refill-option-title">Писанки</h4>
+            <p>Ручная роспись по скорлупе: традиционный орнамент или дизайн под заказ.</p>
+          </a>
+        </div>
+        <div class="refill-grid">
+          <article class="refill-block">
+            <h3 class="refill-title">Повторный заказ яиц</h3>
+            <p class="refill-desc">Не упаковка диктует цену — наполнение. Закажите <em>только яйца</em>: тот же генетический состав и палитра, что в вашей коллекции, без повторной оплаты ларца или кейса. Сборка вручную, калибровка по размеру под вашу шкатулку; возможен микс пород и оттенков с точным подбором количества под ячейки. Цена — от количества и выбранных пород; итог считает <a href="#calculator">калькулятор</a> или менеджер.</p>
+            <p class="refill-cta">Служба поддержки или чат: уточнение цены и оформление.</p>
+          </article>
+          <article class="refill-block">
+            <h3 class="refill-title">Скорлупа и писанки</h3>
+            <p class="refill-desc">Содержимое изымается через микропрокол, скорлупа дезинфицируется и стабилизируется — без потери оттенка и прочности. Поставляется <em>натуральная скорлупа</em> (декор, рукоделие, наполнение пустой шкатулки) или <a href="#pysanky"><em>писанка</em></a>: восковая техника, ручная роспись, каждый экземпляр уникален.</p>
+            <p class="refill-cta">Шкатулка живёт: с яйцами, скорлупой или писанками на годы.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-calculator" id="calculator">
+      <div class="container">
+        <h2 class="section-title">Калькулятор набора яиц</h2>
+        <p class="section-lead">Выберите породу, оттенок и количество. Сформируем предложение и отправим в корзину.</p>
+        <div class="calc-layout">
+          <div class="calc-form-wrap">
+            <h3 class="calc-step-title">Порода и оттенок</h3>
+            <div class="calc-breeds" id="calc-breeds">
+              <label class="calc-breed-card" data-breed="araukana" data-color="Бирюзовый" data-price="420">
+                <input type="radio" name="breed" value="araukana" class="calc-breed-input">
+                <span class="calc-breed-egg calc-breed-egg-araukana"></span>
+                <span class="calc-breed-name">Араукана</span>
+                <span class="calc-breed-color">бирюза</span>
+              </label>
+              <label class="calc-breed-card" data-breed="uheilyuy" data-color="Оливковый" data-price="480">
+                <input type="radio" name="breed" value="uheilyuy" class="calc-breed-input">
+                <span class="calc-breed-egg calc-breed-egg-uheilyuy"></span>
+                <span class="calc-breed-name">Ухейилюй</span>
+                <span class="calc-breed-color">олива</span>
+              </label>
+              <label class="calc-breed-card" data-breed="maran" data-color="Медный" data-price="450">
+                <input type="radio" name="breed" value="maran" class="calc-breed-input">
+                <span class="calc-breed-egg calc-breed-egg-maran"></span>
+                <span class="calc-breed-name">Маран медный</span>
+                <span class="calc-breed-color">медь</span>
+              </label>
+              <label class="calc-breed-card" data-breed="maran-dark" data-color="Тёмный шоколад" data-price="470">
+                <input type="radio" name="breed" value="maran-dark" class="calc-breed-input">
+                <span class="calc-breed-egg calc-breed-egg-maran-dark"></span>
+                <span class="calc-breed-name">Маран чёрно-медный</span>
+                <span class="calc-breed-color">шоколад</span>
+              </label>
+              <label class="calc-breed-card" data-breed="olivegger" data-color="Оливково-зелёный" data-price="460">
+                <input type="radio" name="breed" value="olivegger" class="calc-breed-input">
+                <span class="calc-breed-egg calc-breed-egg-olivegger"></span>
+                <span class="calc-breed-name">Олив Эггер</span>
+                <span class="calc-breed-color">оливка</span>
+              </label>
+              <label class="calc-breed-card" data-breed="legorn" data-color="Кремовый" data-price="380">
+                <input type="radio" name="breed" value="legorn" class="calc-breed-input">
+                <span class="calc-breed-egg calc-breed-egg-legorn"></span>
+                <span class="calc-breed-name">Кремлёвская леггорн</span>
+                <span class="calc-breed-color">крем</span>
+              </label>
+              <label class="calc-breed-card" data-breed="orpington" data-color="Персиковый" data-price="400">
+                <input type="radio" name="breed" value="orpington" class="calc-breed-input">
+                <span class="calc-breed-egg calc-breed-egg-orpington"></span>
+                <span class="calc-breed-name">Орпингтон</span>
+                <span class="calc-breed-color">персик</span>
+              </label>
+              <label class="calc-breed-card" data-breed="mix" data-color="Микс" data-price="430">
+                <input type="radio" name="breed" value="mix" class="calc-breed-input">
+                <span class="calc-breed-egg calc-breed-egg-mix"></span>
+                <span class="calc-breed-name">Микс</span>
+                <span class="calc-breed-color">на выбор</span>
+              </label>
+            </div>
+            <div class="calc-quantity-wrap">
+              <label class="calc-label">Количество, шт. (1–100)</label>
+              <input type="number" class="calc-quantity" id="calc-quantity" min="1" max="100" value="6">
+            </div>
+            <div class="calc-pack-wrap">
+              <label class="calc-label">Подача</label>
+              <select class="calc-pack" id="calc-pack">
+                <option value="no">Без упаковки (уже есть шкатулка)</option>
+                <option value="box">Подарочная коробка</option>
+              </select>
+            </div>
+            <div class="calc-buttons">
+              <button type="button" class="btn btn-primary calc-submit" id="calc-submit">Сформировать набор</button>
+              <button type="button" class="btn calc-reset" id="calc-reset">Сбросить</button>
+            </div>
+          </div>
+          <div class="calc-result-wrap" id="calc-result-wrap">
+            <div class="calc-result-placeholder" id="calc-result-placeholder">
+              <p>Выберите породу и количество, нажмите «Сформировать набор».</p>
+            </div>
+            <div class="calc-result-card" id="calc-result-card" hidden>
+              <div class="calc-result-visual" id="calc-result-visual"></div>
+              <h4 class="calc-result-title" id="calc-result-title"></h4>
+              <p class="calc-result-desc" id="calc-result-desc"></p>
+              <p class="calc-result-price" id="calc-result-price"></p>
+              <button type="button" class="btn btn-primary calc-to-cart" id="calc-to-cart">В корзину</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-refill">
+      <div class="container">
+        <div class="pysanky-section" id="pysanky">
+          <h3 class="refill-title">Каталог писанок</h3>
+          <p class="section-lead">Ручная роспись по натуральной скорлупе яиц из нашего авиариума. Восковая техника, традиционные, авторские и современные орнаменты. Цены — выше рыночных за счёт отборной скорлупы и работы мастерской AVIARIUM.</p>
+          <div class="pysanky-grid">
+            <article class="pysanky-card" data-cart-name="Писанка «Берегиня»" data-cart-price="14900">
+              <div class="pysanky-visual"><img src="images/pysanky/01-bereginya.jpg" alt="Берегиня" loading="lazy"></div>
+              <h4 class="pysanky-name">Берегиня</h4>
+              <p class="pysanky-desc">Классический мотив благопожелания и защиты дома, красный и чёрный.</p>
+              <p class="pysanky-price">14 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Солнце»" data-cart-price="14900">
+              <div class="pysanky-visual"><img src="images/pysanky/02-solnze.jpg" alt="Солнце" loading="lazy"></div>
+              <h4 class="pysanky-name">Солнце</h4>
+              <p class="pysanky-desc">Солярные знаки, жёлтый и оранжевый.</p>
+              <p class="pysanky-price">14 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Древо жизни»" data-cart-price="17900">
+              <div class="pysanky-visual"><img src="images/pysanky/03-derevo-zhizni.jpg" alt="Древо жизни" loading="lazy"></div>
+              <h4 class="pysanky-name">Древо жизни</h4>
+              <p class="pysanky-desc">Древо с ветвями и корнями, зелёно-коричневая гамма.</p>
+              <p class="pysanky-price">17 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Водяной знак»" data-cart-price="17900">
+              <div class="pysanky-visual"><img src="images/pysanky/04-vodyanoy.jpg" alt="Водяной знак" loading="lazy"></div>
+              <h4 class="pysanky-name">Водяной знак</h4>
+              <p class="pysanky-desc">Волны и спирали, бирюза и белый.</p>
+              <p class="pysanky-price">17 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Поляница»" data-cart-price="21900">
+              <div class="pysanky-visual"><img src="images/pysanky/05-polyanitsa.jpg" alt="Поляница" loading="lazy"></div>
+              <h4 class="pysanky-name">Поляница</h4>
+              <p class="pysanky-desc">Геометрический орнамент полей, трёхцветный.</p>
+              <p class="pysanky-price">21 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Пасхальная»" data-cart-price="24900">
+              <div class="pysanky-visual"><img src="images/pysanky/06-paschalnaya.jpg" alt="Пасхальная" loading="lazy"></div>
+              <h4 class="pysanky-name">Пасхальная</h4>
+              <p class="pysanky-desc">Классическая пасхальная писанка, красный и золото.</p>
+              <p class="pysanky-price">24 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Цветок папоротника»" data-cart-price="27900">
+              <div class="pysanky-visual"><img src="images/pysanky/07-tsvetok.jpg" alt="Цветок папоротника" loading="lazy"></div>
+              <h4 class="pysanky-name">Цветок папоротника</h4>
+              <p class="pysanky-desc">Цветочный мотив, многослойная роспись.</p>
+              <p class="pysanky-price">27 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Рожа»" data-cart-price="29900">
+              <div class="pysanky-visual"><img src="images/pysanky/08-rozha.jpg" alt="Рожа" loading="lazy"></div>
+              <h4 class="pysanky-name">Рожа</h4>
+              <p class="pysanky-desc">Символ плодородия, восьмилепестковая розетка.</p>
+              <p class="pysanky-price">29 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Барвинок»" data-cart-price="34900">
+              <div class="pysanky-visual"><img src="images/pysanky/09-barvinka.jpg" alt="Барвинок" loading="lazy"></div>
+              <h4 class="pysanky-name">Барвинок</h4>
+              <p class="pysanky-desc">Цветочный орнамент, синий и белый.</p>
+              <p class="pysanky-price">34 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Золотая грань»" data-cart-price="49900">
+              <div class="pysanky-visual"><img src="images/pysanky/10-zolotoy-gran.jpg" alt="Золотая грань" loading="lazy"></div>
+              <h4 class="pysanky-name">Золотая грань</h4>
+              <p class="pysanky-desc">Деликатная золотая подводка по воску.</p>
+              <p class="pysanky-price">49 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Орбита»" data-cart-price="39900">
+              <div class="pysanky-visual"><img src="images/pysanky/11-futur-cosmos.jpg" alt="Орбита" loading="lazy"></div>
+              <h4 class="pysanky-name">Орбита</h4>
+              <p class="pysanky-desc">Космическая тема: звёзды, планеты, лаконичная палитра.</p>
+              <p class="pysanky-price">39 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Минимализм»" data-cart-price="42900">
+              <div class="pysanky-visual"><img src="images/pysanky/12-futur-minimal.jpg" alt="Минимализм" loading="lazy"></div>
+              <h4 class="pysanky-name">Минимализм</h4>
+              <p class="pysanky-desc">Чистая геометрия, один-два цвета, современная эстетика.</p>
+              <p class="pysanky-price">42 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Код»" data-cart-price="44900">
+              <div class="pysanky-visual"><img src="images/pysanky/13-futur-code.jpg" alt="Код" loading="lazy"></div>
+              <h4 class="pysanky-name">Код</h4>
+              <p class="pysanky-desc">Тонкий узор в духе кода и цифровой эстетики, без пошлости.</p>
+              <p class="pysanky-price">44 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Зелёный»" data-cart-price="46900">
+              <div class="pysanky-visual"><img src="images/pysanky/14-futur-eco.jpg" alt="Зелёный" loading="lazy"></div>
+              <h4 class="pysanky-name">Зелёный</h4>
+              <p class="pysanky-desc">Природные мотивы, экология, устойчивость — ценности нового времени.</p>
+              <p class="pysanky-price">46 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+            <article class="pysanky-card" data-cart-name="Писанка «Рассвет»" data-cart-price="49900">
+              <div class="pysanky-visual"><img src="images/pysanky/15-futur-dawn.jpg" alt="Рассвет" loading="lazy"></div>
+              <h4 class="pysanky-name">Рассвет</h4>
+              <p class="pysanky-desc">Свет и надежда, новая эра — лаконичная и вдохновляющая роспись.</p>
+              <p class="pysanky-price">49 900 ₽</p>
+              <div class="pysanky-actions"><button type="button" class="btn btn-card add-to-cart-btn">В корзину</button></div>
+            </article>
+          </div>
+          <p class="refill-cta" style="margin-top:1rem;">Дизайн под запрос, комплекты под вашу шкатулку — по запросу.</p>
+        </div>
+
+        <section class="smart-caskets-section" id="smart-caskets">
+          <h3 class="refill-title">Супершкатулки с умными опциями</h3>
+          <p class="section-lead">В духе изысканных аксессуаров: реализуемые технологии, которые можно заказать в разумные сроки. Любой ларчик AVIARIUM можно доукомплектовать одной или несколькими опциями.</p>
+          <div class="smart-caskets-grid">
+            <article class="smart-card">
+              <div class="smart-card-visual"><img src="images/smart/lock-code.jpg" alt="Замок с кодом" loading="lazy"></div>
+              <h4 class="smart-card-title">Замок с кодом</h4>
+              <p class="smart-card-desc">Электронный кодовый замок, врезной или накладной. 4–6 цифр, смена кода владельцем. Питание от сменной батарейки. Срок изготовления 2–4 недели.</p>
+            </article>
+            <article class="smart-card">
+              <div class="smart-card-visual"><img src="images/smart/lock-fingerprint.jpg" alt="Отпечаток пальца" loading="lazy"></div>
+              <h4 class="smart-card-title">Биометрия: отпечаток</h4>
+              <p class="smart-card-desc">Мини-модуль распознавания отпечатка, до 10 отпечатков в памяти. Открытие за 1 секунду. Реализуемо на базе готовых модулей, интеграция в крышку или фронт ларца.</p>
+            </article>
+            <article class="smart-card">
+              <div class="smart-card-visual"><img src="images/smart/sensor-open.jpg" alt="Датчик открытия" loading="lazy"></div>
+              <h4 class="smart-card-title">Датчик открытия</h4>
+              <p class="smart-card-desc">Уведомление в приложение или SMS при открытии шкатулки. Магнитный или контактный датчик, компактный блок с SIM или Wi‑Fi. Идеально для хранения ценностей.</p>
+            </article>
+            <article class="smart-card">
+              <div class="smart-card-visual"><img src="images/smart/sensor-climate.jpg" alt="Температура и влажность" loading="lazy"></div>
+              <h4 class="smart-card-title">Климат-контроль</h4>
+              <p class="smart-card-desc">Датчик температуры и влажности внутри с выводом в приложение. Оповещение при выходе за заданный диапазон — для коллекций, требующих стабильных условий.</p>
+            </article>
+            <article class="smart-card">
+              <div class="smart-card-visual"><img src="images/smart/secret-compartment.jpg" alt="Потайное дно" loading="lazy"></div>
+              <h4 class="smart-card-title">Потайное дно</h4>
+              <p class="smart-card-desc">Второе дно с механическим или магнитным открытием. Классика «шпионских» шкатулок: визуально не заметно, открывается нажатием в нужной точке или ключом-магнитом.</p>
+            </article>
+            <article class="smart-card">
+              <div class="smart-card-visual"><img src="images/smart/app-unlock.jpg" alt="Открытие по приложению" loading="lazy"></div>
+              <h4 class="smart-card-title">Открытие по приложению</h4>
+              <p class="smart-card-desc">Электрозащёлка + Bluetooth-модуль. Открытие с телефона по пин-коду или биометрии. Логи доступа. Срок реализации под заказ 4–8 недель.</p>
+            </article>
+          </div>
+          <p class="refill-cta" style="margin-top:1rem;">Комбинация опций и стоимость — по запросу. Изготовление или заказ модулей под ваш ларчик.</p>
+          <p class="smart-caskets-cta">
+            <a href="#contact" class="btn btn-primary smart-caskets-btn">Узнать сроки и стоимость</a>
+          </p>
+        </section>
+      </div>
+    </section>
+
+    <div class="cart-drawer" id="cart-drawer" aria-hidden="true">
+      <div class="cart-drawer-inner">
+        <div class="cart-drawer-header">
+          <h3>Корзина</h3>
+          <button type="button" class="cart-drawer-close" id="cart-drawer-close" aria-label="Закрыть">×</button>
+        </div>
+        <div class="cart-spiral-wrap" id="cart-spiral-wrap">
+          <p class="cart-spiral-title">Ваш заказ — в порядке радуги</p>
+          <div class="cart-spiral" id="cart-spiral"></div>
+        </div>
+        <div class="cart-drawer-items" id="cart-drawer-items"></div>
+        <div class="cart-drawer-footer">
+          <button type="button" class="cart-clear" id="cart-clear">Очистить корзину</button>
+          <p class="cart-drawer-total" id="cart-drawer-total"></p>
+          <button type="button" class="btn btn-primary cart-drawer-order" id="cart-checkout-btn">Оформить заказ</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="order-modal" id="order-modal" aria-hidden="true">
+      <div class="order-modal-backdrop" id="order-modal-backdrop"></div>
+      <div class="order-modal-content">
+        <div class="order-modal-header">
+          <h2 class="order-modal-title">Оформление заказа</h2>
+          <button type="button" class="order-modal-close" id="order-modal-close" aria-label="Закрыть">×</button>
+        </div>
+        <p class="order-modal-intro">Менеджер свяжется с вами для уточнения сроков исполнения, адреса доставки и срочности.</p>
+        <div class="order-modal-summary" id="order-modal-summary"></div>
+        <form class="order-form" id="order-form">
+          <label class="order-field">
+            <span>Имя / ФИО</span>
+            <input type="text" name="name" required placeholder="Как к вам обращаться">
+          </label>
+          <label class="order-field">
+            <span>Телефон</span>
+            <input type="tel" name="phone" required placeholder="+7 (___) ___-__-__" class="phone-mask-input">
+          </label>
+          <label class="order-field">
+            <span>Email</span>
+            <input type="email" name="email" placeholder="для подтверждения заказа">
+          </label>
+          <label class="order-field">
+            <span>Адрес доставки</span>
+            <input type="text" name="address" placeholder="Город, улица, дом, индекс">
+          </label>
+          <label class="order-field">
+            <span>Срочность</span>
+            <select name="urgency">
+              <option value="normal">Обычный срок</option>
+              <option value="urgent">Срочный заказ</option>
+              <option value="date">К определённой дате</option>
+            </select>
+          </label>
+          <label class="order-field order-field-date" id="order-field-date" style="display:none">
+            <span>Желаемая дата</span>
+            <input type="text" name="date_wish" placeholder="Например: 15 марта">
+          </label>
+          <label class="order-field">
+            <span>Комментарий</span>
+            <textarea name="comment" rows="3" placeholder="Пожелания, особые условия доставки"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary order-submit">Отправить заявку менеджеру</button>
+        </form>
+        <div class="order-modal-success" id="order-modal-success" hidden>
+          <p class="order-success-title">Заявка отправлена</p>
+          <p>Менеджер свяжется с вами в ближайшее время для уточнения сроков исполнения, адреса и деталей заказа.</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section section-service" id="service">
+      <div class="container">
+        <h2 class="section-title">Гастрономия и сервис</h2>
+        <div class="service-grid">
+          <div class="service-block">
+            <h3 class="service-title">Выездной завтрак AVIARIUM</h3>
+            <p>Закажите незабываемое утро. Наш шеф-повар приедет к вам домой или на яхту, чтобы приготовить завтрак из свежайших яиц редких пород прямо при вас. Подача на авторском фарфоре премиум-класса.</p>
+          </div>
+          <div class="service-block">
+            <h3 class="service-title">Персонализация</h3>
+            <ul>
+              <li>Гравировка на скорлупе (имя, дата, поздравление) пищевым золотом</li>
+              <li>Нанесение логотипа компании для корпоративных подарков</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-delivery" id="delivery">
+      <div class="container">
+        <h2 class="section-title">Доставка и оплата</h2>
+        <div class="delivery-grid">
+          <div class="delivery-block">
+            <h3 class="delivery-subtitle">Доставка</h3>
+            <p>По РФ — курьером. Сроки и стоимость уточняются при оформлении заказа. Авиа-доставка в страны СНГ.</p>
+          </div>
+          <div class="delivery-block">
+            <h3 class="delivery-subtitle">Оплата</h3>
+            <p>Банковская карта, перевод по реквизитам. Оплата после согласования заказа с менеджером.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <span class="logo">AVIARIUM</span>
+            <p class="tagline">Коллекция редких оттенков природы</p>
+          </div>
+          <div class="footer-contacts">
+            <h4>Контакты</h4>
+            <p><a href="tel:+79219255511">+7 (921) 925-55-11</a> — менеджер</p>
+            <p><a href="https://t.me/aviarium" target="_blank" rel="noopener noreferrer">Telegram</a></p>
+          </div>
+          <div class="footer-form-block">
+            <h4>Заказать обратный звонок</h4>
+            <form class="footer-form" action="#" method="get" id="callback-form">
+              <input type="text" name="name" placeholder="Имя" required>
+              <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required class="phone-mask-input">
+              <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-legal">
+          <p>AVIARIUM © 2024. Все права защищены. Доставка по РФ курьером. Авиа-доставка в страны СНГ.</p>
+          <p>Продукция имеет ветеринарные сертификаты высшей категории.</p>
+          <p class="footer-legal-version">Сайт v1.8</p>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- Кнопки «Вниз» (у верха страницы) и «Наверх» (при прокрутке) -->
+  <button type="button" class="back-to-bottom" id="back-to-bottom" aria-label="Вниз" aria-hidden="true">↓</button>
+  <button type="button" class="back-to-top" id="back-to-top" aria-label="Наверх" aria-hidden="true">↑</button>
+
+  <!-- Чат-помощник -->
+  <div class="chat-widget" id="chat-widget">
+    <div class="chat-panel" id="chat-panel" aria-hidden="true">
+      <div class="chat-panel-header">
+        <span class="chat-panel-title">Помощник AVIARIUM</span>
+        <button type="button" class="chat-panel-close" id="chat-panel-close" aria-label="Закрыть чат">×</button>
+      </div>
+      <div class="chat-messages" id="chat-messages">
+        <div class="chat-msg chat-msg-bot">
+          <p>Здравствуйте. Я помощник AVIARIUM — помогу с выбором коллекции, упаковки и доставки. Напишите ваш вопрос.</p>
+        </div>
+      </div>
+      <div class="chat-input-wrap">
+        <textarea class="chat-input" id="chat-input" placeholder="Напишите сообщение..." rows="1" maxlength="2000"></textarea>
+        <button type="button" class="chat-send" id="chat-send" aria-label="Отправить">Отправить</button>
+      </div>
+    </div>
+    <button type="button" class="chat-toggle" id="chat-toggle" aria-label="Открыть чат с помощником">
+      <span class="chat-toggle-icon">💬</span>
+    </button>
+  </div>
+
+  <!-- Кнопка «Мобильная версия» скрыта в продакшене; для отладки добавьте класс debug к body -->
+  <button type="button" class="view-toggle view-toggle-dev" id="view-toggle" aria-label="Мобильная версия" hidden>
+    <span class="view-toggle-label">Мобильная версия</span>
+  </button>
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true">
+    <div class="mobile-overlay-bar">
+      <span class="mobile-overlay-title">Мобильная версия</span>
+      <button type="button" class="mobile-overlay-close" id="mobile-overlay-close">Полная версия</button>
+    </div>
+    <div class="mobile-overlay-frame">
+      <iframe id="mobile-iframe" title="Мобильная версия сайта" src="about:blank"></iframe>
+    </div>
+  </div>
+
+  <script>
+    window.AVIARIUM_CHAT_API = 'http://localhost:3000';
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
