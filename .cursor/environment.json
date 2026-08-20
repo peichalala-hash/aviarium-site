@@ -1,0 +1,20 @@
+{
+  "name": "AVIARIUM site",
+  "install": "cd backend && npm install",
+  "terminals": [
+    {
+      "name": "backend",
+      "command": "cd backend && npm run dev",
+      "description": "AVIARIUM chat/order Express API on http://localhost:3000"
+    },
+    {
+      "name": "static-site",
+      "command": "python3 -m http.server 8080",
+      "description": "Serves the static marketing site on http://localhost:8080"
+    }
+  ],
+  "ports": [
+    { "name": "backend-api", "port": 3000 },
+    { "name": "static-site", "port": 8080 }
+  ]
+}
