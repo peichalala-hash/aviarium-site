@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="AVIARIUM">
+  <defs>
+    <linearGradient id="egg-fill" x1="28%" y1="8%" x2="78%" y2="92%">
+      <stop offset="0%" stop-color="#e8d9a8"/>
+      <stop offset="42%" stop-color="#c9a962"/>
+      <stop offset="100%" stop-color="#a68b4a"/>
+    </linearGradient>
+    <radialGradient id="egg-shine" cx="34%" cy="28%" r="48%">
+      <stop offset="0%" stop-color="#faf9f7" stop-opacity="0.42"/>
+      <stop offset="55%" stop-color="#faf9f7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="32" height="32" fill="#1a1a1a"/>
+  <rect x="2" y="2" width="28" height="28" rx="3" fill="none" stroke="#c9a962" stroke-width="2"/>
+  <path fill="url(#egg-fill)" d="M16 6.2C21 6.2 24.4 12 24.4 18.3C24.4 24.8 20.7 27.7 16 27.7C11.3 27.7 7.6 24.8 7.6 18.3C7.6 12 11 6.2 16 6.2Z"/>
+  <path fill="url(#egg-shine)" d="M16 6.2C21 6.2 24.4 12 24.4 18.3C24.4 24.8 20.7 27.7 16 27.7C11.3 27.7 7.6 24.8 7.6 18.3C7.6 12 11 6.2 16 6.2Z"/>
+</svg>
