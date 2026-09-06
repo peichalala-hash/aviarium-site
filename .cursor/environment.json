@@ -1,0 +1,15 @@
+{
+  "name": "AVIARIUM site",
+  "install": "cd backend && npm install",
+  "terminals": [
+    {
+      "name": "backend",
+      "command": "cd backend && npm start"
+    },
+    {
+      "name": "frontend",
+      "command": "python3 -m http.server 8080"
+    }
+  ],
+  "ports": [3000, 8080]
+}
